@@ -1,0 +1,13 @@
+{
+  "name": "wdme-core",
+  "version": "2026.3a",
+  "description": "A modular TypeScript engine for building node-based web editors.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.x.x"
+}
+}
