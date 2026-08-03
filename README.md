@@ -8,7 +8,7 @@ The core provides a generic object tree, events, attributes, serialization and a
 
 - Node-based object tree
 - Event system
-- Dynamic attributes
+- attributes
 - JSON serialization
 - Node registry
 - Plugin API
@@ -50,3 +50,61 @@ WDME Core is currently in early alpha. The API may change between releases.
 ## License
 
 MIT
+
+---
+
+# **RU:**
+
+# WDME Core
+
+WDME Core это модульный TypeScript движок созданный для разработки веб-редакторов.
+
+Ядро предоставляет дерево объектов на основе Node, систему событий, атрибуты, механизмы сериализации и систему плагинов. Оно спроектировано так, чтобы быть легковесным, расширяемым и независимым от каких-либо UI-фреймворков.
+
+## Особенности
+
+- Дерево объектов основанное на Node
+- Система событий
+- Аттрибуты
+- Сериализация/Десериализация JSON
+- Реестр типов Node
+- API плагинов
+- TypeScript
+
+## Не является целью
+
+WDME Core не предоставляет
+
+- Рендеринг
+- HTML генерация
+- CSS
+- GUI
+- Исполнение JavaScript
+- Встроенный визуальный редактор кода
+- Менеджер пакетов
+
+Эти функции относятся к приложениям, созданным на основе ядра.
+
+## Пример
+
+```ts
+const project = new WDMEProject("Project");
+const folder = new WDMEFolder("Folder");
+
+project.AddChild(folder);
+
+const api = new WDMECoreAPI();
+
+const data = api.Serialize(project);
+```
+
+## Статус
+
+Текущая версия: **2026.3a**
+
+WDME Core в ранней альфе. API может меняться между версиями
+
+## Лицензия
+
+MIT
+
